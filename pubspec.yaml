@@ -1,14 +1,15 @@
 name: trufi_core
 description: A Flutter Plugin for Public Transport.
-version: 4.0.0
-homepage: https://www.trufi-association.org/
-repository: https://github.com/trufi-association/trufi-core
+version: 1.0.0
+publish_to: 'none'
+repository: https://github.com/Reksa-ggwp/angkot-core
 
 environment:
   sdk: '>=2.18.2 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
+  cupertino_icons: ^1.0.2
   app_review: ^2.1.2+1
   async: ^2.9.0
   async_executor: ^0.0.2
@@ -50,16 +51,19 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  lodash_flutter: ^0.0.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  uses-material-design: true
   # To add assets to your package, add an assets section, like this:
   assets:
+    - assets/data/
     - assets/images/
+  # - assets/data/POIs/
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages
